@@ -1,5 +1,5 @@
 // ========== CONFIG ==========
-const API_BASE_URL = "http://127.0.0.1:8000"; // Change to your backend
+const API_BASE_URL = "https://uteailab-web-chatbot-io.onrender.com"; // Change to your backend
 
 // ========== STATE ==========
 let sessionId = null;

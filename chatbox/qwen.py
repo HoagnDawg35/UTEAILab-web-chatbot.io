@@ -34,6 +34,7 @@ app.add_middleware(
     allow_origins=[
         "http://127.0.0.1:5500",   # your current dev origin
         "http://localhost:5500",   # handy alias
+        "https://github.com/HoagnDawg35/UTEAILab-web-chatbot.io"
     ],
     allow_credentials=True,
     allow_methods=["*"],
