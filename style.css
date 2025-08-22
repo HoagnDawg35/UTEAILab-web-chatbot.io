@@ -1,0 +1,748 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding-top: 80px; /* Prevent content from sliding under fixed navbar */
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section with Animation */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo:hover img {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 0;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+  color: #1e90ff;
+}
+
+.navbar .nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #1e90ff;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-links li a:hover::after,
+.navbar .nav-links li a.active::after {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ANNOUNCEMENT BAR */
+.announcement {
+  /* position: fixed; */
+  background-color: #eaf6ff;
+  padding: 10px 30px;
+  color: #0275d8;
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* BANNER SECTION */
+.banner {
+  max-width: fit-content;
+  background-color: white;
+  margin: 30px auto;
+  padding: 30px;
+  width: 80%;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.banner h2 {
+  color: #900c3f;
+  margin-bottom: 15px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* LAB INTRO SECTION */
+.lab-intro {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.lab-intro h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+.lab-intro p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background-color: #0275d8;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #025aa5;
+}
+
+/* LATEST NEWS SECTION */
+.latest-news-section {
+  padding: 40px 30px;
+  background: #fff;
+}
+
+.latest-news-section h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Horizontal scroll container */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* News Card */
+.news-card {
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 280px;
+  max-width: 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.news-card h4 {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.news-card p {
+  font-size: 14px;
+  color: #555;
+}
+/* Team members */
+.team-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #111;
+  font-weight: bold;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px auto;
+  width: 80%;
+}
+
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.member-card {
+  width: 150px;
+  text-align: center;
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.member-card img:hover {
+  transform: scale(1.05);
+}
+
+.member-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #555;
+}
+.research-proj {
+  display: grid;
+  justify-content: center;
+}
+.research-detail {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.research-detail h2 {
+  font-size: 28px;
+  color: #80003b; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.research-detail h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #444;
+}
+
+.research-detail p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.research-detail ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.research-detail li {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.research-detail strong {
+  color: #202020;
+}
+
+.research-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.research-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.research-image img:hover {
+  transform: scale(1.02);
+}
+/* ===== Global Styles ===== */
+
+
+/* ===== Main Container ===== */
+#publications {
+  width: 85%;
+  max-width: 950px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== Headings ===== */
+#publications h1 {
+  text-align: center;
+  font-size: 2rem;              /* Large but not overwhelming */
+  font-weight: 700;             /* Bold for emphasis */
+  color: #1e3a8a;               /* Matches your h2 section color scheme */
+  margin-bottom: 1.5rem;        /* Space below heading */
+   padding-bottom: 0.5rem;       /* Gap between text and underline */
+  font-family: 'Inter', 'IBM Plex Sans', sans-serif; /* Keep font consistent */
+}
+
+
+#publications h2 {
+  color: #1e3a8a; /* deep blue */
+  border-bottom: 3px solid #1d4ed8;
+  padding-bottom: 8px;
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+#publications h3 {
+  color: #34495e; /* grayish-blue */
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+/* 
+.container h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0px 0 10px; 
+  color: #1e3a8a;
+  font-family: 'Inter', 'IBM Plex Sans', sans-serif;
+} */
+
+/* ===== Publication Item (div.pub-item) ===== */
+.publication-section {
+  text-align: center;
+}
+
+.pub-item {
+  margin-bottom: 18px;
+  padding: 16px 20px;
+  background: #f9fafb;
+  border-left: 5px solid #3498db; /* Old blue accent */
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  font-size: 0.95rem; /* compact */
+  line-height: 1.6;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.3s ease;
+}
+
+.pub-item:hover {
+  background: #e8f4f8; /* Old hover background */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+/* ===== Inline Text Styles ===== */
+.year {
+  font-weight: 600;
+  color: #2980b9; /* Old year blue */
+  margin-right: 6px;
+}
+
+.journal-title {
+  font-style: italic;
+  color: #7f8c8d; /* Old journal gray */
+}
+
+.text-gray {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* ===== Notes & Awards ===== */
+.sci-info,
+.note-green {
+  color: #27ae60; /* SCI green */
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.note-blue {
+  color: #2563eb;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.note-gray {
+  color: #6b7280;
+  font-style: italic;
+  margin-left: 6px;
+}
+
+.award {
+  color: #e67e22; /* amber/orange for awards */
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* FOOTER SECTION */
+.footer {
+  background: linear-gradient(to bottom, #000000, #080838);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.footer-icons a {
+  color: white;
+  margin: 0 10px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #f6f6f6;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #0095ff;
+  text-decoration: underline;
+}
+
+.footer-settings {
+  margin-top: 20px;
+}
+/* -------------------- Chatbot Floating Button -------------------- */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background: #1e9c76;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+#chatbot-toggle:hover {
+  background: #17a97c;
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------- Chatbot Window -------------------- */
+#chatbot-window {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 340px;
+  max-height: 480px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 9999;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Header */
+#chatbot-header{
+  position: relative;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #1e9c76, #17a97c);
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 18px 18px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#chatbot-header span {
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.85;
+}
+
+#chatbot-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#chatbot-close:hover {
+  transform: rotate(90deg);
+}
+
+.chatbot-controls button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chatbot-controls button:hover {
+  transform: scale(1.2);
+  color: #ffcccc;
+}
+
+/* Messages Area */
+#chatbot-messages {
+  padding: 12px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+  background: #fafafa;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Input Section */
+#chatbot-input {
+  display: flex;
+  flex-shrink: 0;
+  display: flex;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+#chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 0 0 0 18px;
+}
+
+#chatbot-input button {
+  background: #1e9c76;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 0 18px 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+}
+#chatbot-input button:hover {
+  background: #17a97c;
+}
+
+/* -------------------- Chat Bubbles -------------------- */
+.chat-msg {
+  flex-shrink: 1;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  line-height: 1.5;
+  max-width: 85%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.chat-msg.user {
+  background: #d1eaff;
+  align-self: flex-end;
+  text-align: right;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-msg.ai {
+  background: #f1f1f1;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* Code blocks */
+.chat-msg pre {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+/* Inline code */
+.chat-msg code {
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/* Markdown lists */
+.chat-msg ul, .chat-msg ol {
+  margin: 6px 0 6px 20px;
+}
+
+/* -------------------- Typing Dots -------------------- */
+.typing {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.typing span {
+  width: 6px;
+  height: 6px;
+  background: #666;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1.4s infinite both;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+/* -------------------- Animations -------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* -------------------- Demo JSON-file publication -------------------- */
+.year { font-weight: bold; color: #444; }
+.authors { font-style: italic; }
+.title { font-weight: 600; }
+.journal { color: #0066cc; }
+.sci-info { color: green; }
+.award { color: darkred; font-weight: bold; }
+

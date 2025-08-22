@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUBLICATIONS | UTE AI Laboratory</title>
+  <link rel="icon" type="image/jpg" href="Logos/UTE-AI-cropped.jpg"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Logos\UTE-AI-cropped.jpg" alt="UTE AI Logo" href="index.html"/>
+      </a>
+      <span>UTE AI Laboratory</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="team.html">MEMBERS</a></li>
+      <li><a href="research.html">RESEARCH</a></li>
+      <li><a href="demo_json_publication.html">PUBLICATIONS</a></li>
+      <li><a href="awards.html">AWARDS</a></li>
+      <!-- <li><a href="#">NEWS</a></li> -->
+      <li><a href="https://github.com/HoagnDawg35/ute-ailab.io?tab=readme-ov-file">GITHUB</a></li> 
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div id="publications">
+        <h1>Publications</h1>
+    </div>
+  </div>
+  <!-- ============== Loading publication from JSON file ============== -->
+  <script>
+    async function loadPublications() {
+    try {
+        const response = await fetch("data/publications.json");
+        const data = await response.json();
+        const container = document.getElementById("publications");
+
+        for (const [category, entries] of Object.entries(data.Publications)) {
+        const section = document.createElement("div");
+        section.innerHTML = `<h2>${category}</h2>`;
+
+        // Iterate each entry inside a category
+        entries.forEach(entry => {
+            const yearHeader = document.createElement("h3");
+            yearHeader.textContent = entry.year;
+            section.appendChild(yearHeader);
+
+            if (entry.papers && Array.isArray(entry.papers)) {
+            // Case: year with multiple papers
+            entry.papers.forEach(paper => {
+                section.appendChild(renderItem({ ...paper, year: entry.year }));
+            });
+            } else {
+            // Case: single publication object (no "papers" array)
+            section.appendChild(renderItem(entry));
+            }
+        });
+
+        container.appendChild(section);
+        }
+    } catch (err) {
+        console.error("Error loading publications:", err);
+    }
+    }
+
+    function renderItem(item) {
+    const div = document.createElement("div");
+    div.className = "pub-item";
+
+    const authors = item.authors ? `${item.authors}, ` : "";
+    const title = item.title ? `"${item.title}"` : "";
+    const journal = item.journal ? `<em>${item.journal}</em>` : "";
+    const details = [item.volume_issue, item.issue, item.date, item.year]
+        .filter(Boolean).join(", ");
+
+    let note = "";
+    if (item.note) {
+        if (item.note.includes("SCI")) {
+        note = `<span class="note-green">(${item.note})</span>`;
+        } else if (item.note.includes("E-SCI")) {
+        note = `<span class="note-blue">(${item.note})</span>`;
+        } else {
+        note = `<span class="note-gray">(${item.note})</span>`;
+        }
+    }
+
+    let award = "";
+    if (item.award) {
+        award = `<span class="note-green">🏆 ${item.award}</span>`;
+    }
+
+    div.innerHTML = `
+        <p>
+        ${authors}${title} ${journal}
+        ${details ? `, <span class="text-gray">${details}</span>` : ""}
+        ${note} ${award}
+        </p>
+    `;
+    return div;
+    }
+
+    loadPublications();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+</html>

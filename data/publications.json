@@ -1,0 +1,337 @@
+{
+  "Publications": {
+    "International Patents": [
+      {
+        "year": 2019,
+        "authors": "Ching-Chun Huang, Vu-Hoang Tran, Hung-Sheng Cheng",
+        "title": "Method for Establishing A Parking Space Detection Model and Method of Detecting Parking Spaces for A Parking Lot",
+        "journal": "U.S. Patent 20190228658",
+        "note": "issued July 25, 2019"
+      }
+    ],
+    "International Journal Papers": [
+      {
+        "year": 2019,
+        "authors": "Manh-Hung Nguyen, Vu-Hoang Tran, Thanh-Hai Nguyen, Thanh-Nghia Nguyen",
+        "title": "A Deep Learning Framework for Inter-Patient ECG Classification",
+        "journal": "International Journal of Computer Science and Network Security (IJCSNS)",
+        "volume_issue": "vol. 19, no. 1, pp. 74–84",
+        "note": "E-SCI"
+      },
+      {
+        "year": 2018,
+        "authors": "Hoang Tran Vu, Ching-Chun Huang",
+        "title": "Parking Space Status Inference upon a Deep CNN and Multi-task Contrastive Network with Spatial Transform",
+        "journal": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+        "note": "SCI-Q1"
+      },
+      {
+        "year": 2017,
+        "authors": "Ching-Chun Huang, Hoang Tran Vu",
+        "title": "Vacant Parking Space Detection based on a Multi-layer Inference Framework",
+        "journal": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+        "volume_issue": "vol. 27, no. 9, pp. 2041–2054",
+        "note": "SCI-Q1"
+      }
+    ],
+    "International Conference Papers": [
+      {
+        "year": 2025,
+        "authors": "Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang",
+        "title": "RC-AutoCalib: An End-to-End Radar-Camera Automatic Calibration Network",
+        "journal": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "date": "June 2025"
+      },
+      {
+        "year": 2024,
+        "papers": [
+          {
+            "authors": "Huu-Phu Do, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Blind Super Resolution with Reference Images and Implicit Degradation Representation",
+            "journal": "Asian Conference on Computer Vision (ACCV)",
+            "date": "Dec. 2024"
+          },
+          {
+            "authors": "Huu-Hieu Tran, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Improving Video Retrieval Systems Using Multimodal Fusion and Re-ranking Algorithm",
+            "journal": "International Conference on Green Technology and Sustainable Development (GTSD)",
+            "date": "July 2024"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "papers": [
+          {
+            "authors": "Ngoc-Quan Ha-Phan, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "A Reliable Feature-Based Framework for Vehicle Tracking in Advanced Driver Assistance Systems",
+            "journal": "APSIPA ASC",
+            "date": "Oct. 2023"
+          },
+          {
+            "authors": "Cong-Ty Dang, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "From Synthetic To Real: Enhancing Deep Learning Models With GANs for Efficient Data Utilization in Automatic Retail Stores",
+            "journal": "APSIPA ASC",
+            "date": "Oct. 2023"
+          },
+          {
+            "authors": "Nhat-Tuong Do-Tran, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Efficient Video Retrieval Method Based on Transition Detection and Metadata",
+            "journal": "International Conference on System Science and Engineering (ICSSE)",
+            "date": "July 2023"
+          },
+          {
+            "authors": "Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "D2D: Divide to Detect, A Scale-Aware Framework for On-Road Object Detection Using IR Camera",
+            "journal": "IEEE ICCE",
+            "date": "Jan. 2023"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "papers": [
+          {
+            "authors": "Khanh-Phong Bui, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "The Design of a Multi-task Learning System for Autonomous Vehicles",
+            "journal": "GTSD",
+            "date": "July 2022"
+          },
+          {
+            "authors": "Egor Poliakov, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Model Compression via Structural Pruning and Feature Distillation for Accurate Multi-spectral Object Detection on Edge-devices",
+            "journal": "IEEE ICME",
+            "date": "July 2022"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "papers": [
+          {
+            "authors": "Vu-Hoang Tran, Le-Hoai-Hieu Dang, Ching-Chun Huang",
+            "title": "Real-time and Robust System for Counting Movement-Specific Vehicles at Crowded Intersections",
+            "journal": "CVPR Workshops",
+            "date": "June 2021"
+          },
+          {
+            "authors": "Le-Hoai-Hieu Dang, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Robust System for Counting Movement-Specific Vehicles",
+            "journal": "ICSSE",
+            "date": "Aug. 2021"
+          },
+          {
+            "authors": "Minh-Nghia Nguyen, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Depth Embedded and Dense Dilated Convolutional Network for Crowd Density Estimation",
+            "journal": "ICSSE",
+            "date": "Aug. 2021"
+          },
+          {
+            "authors": "Pham-Tuan-Anh Phung, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Using Deep Learning in A Welding Practice Training Support System",
+            "journal": "ICSSE",
+            "date": "Aug. 2021"
+          },
+          {
+            "authors": "You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "DEN: Disentangling and Exchanging Network for Depth Completion",
+            "journal": "ICPR",
+            "date": "Jan. 2021"
+          }
+        ]
+      },
+      {
+        "year": 2020,
+        "papers": [
+          {
+            "authors": "Trung-Hieu Nguyen, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "A Lightweight Model For Real-time Traffic Sign Recognition",
+            "journal": "GTSD",
+            "date": "Nov. 2020"
+          },
+          {
+            "authors": "Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Traditional Method Meets Deep Learning in Adaptive Lane and Obstacle Detection",
+            "journal": "GTSD",
+            "date": "Nov. 2020"
+          },
+          {
+            "authors": "Nelson Chong, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "DEN: Disentanglement and Enhancement Networks for Low Illumination Images",
+            "journal": "IEEE VCIP",
+            "date": "Dec. 2020"
+          },
+          {
+            "authors": "Wei-Zhong Zheng, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "D2NA: Day-to-Night Adaptation for Vision-based Parking Management System",
+            "journal": "ICASSP",
+            "date": "May 2020"
+          }
+        ]
+      },
+      {
+        "year": 2019,
+        "papers": [
+          {
+            "authors": "Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Domain Adaptation Meets Disentangled Representation Learning and Style Transfer",
+            "journal": "IEEE SMC",
+            "date": "Oct. 2019"
+          },
+          {
+            "authors": "Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "IUML: Inception U-Net based Multi-Task Learning for Crowd Estimation",
+            "journal": "IEEE SMC",
+            "date": "Oct. 2019"
+          },
+          {
+            "authors": "Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "DAnet: Depth-Aware Network for Crowd Counting",
+            "journal": "IEEE ICIP",
+            "date": "Sept. 2019"
+          },
+          {
+            "authors": "You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang",
+            "title": "Semi-supervised and Multi-task Learning for On-street Parking Space Inference",
+            "journal": "MAPR",
+            "date": "May 2019",
+            "award": "Best Paper Award"
+          }
+        ]
+      },
+      {
+        "year": 2018,
+        "authors": "Thanh-Phat Nguyen, Vu-Hoang Tran, Ching-Chun Huang",
+        "title": "Lane Detection and Tracking using FCN and PGMs",
+        "journal": "IEEE SMC",
+        "date": "Oct. 2018"
+      },
+      {
+        "year": 2017,
+        "authors": "Hoang Tran Vu, Ching-Chun Huang",
+        "title": "A Multi-Task CNN with Spatial Transform for Parking Space Detection",
+        "journal": "IEEE ICIP",
+        "date": "Sept. 2017"
+      },
+      {
+        "year": 2016,
+        "papers": [
+          {
+            "authors": "Hoang Tran Vu, Ching-Chun Huang",
+            "title": "A Hybrid Method for Visitor Localization in a Museum Environment",
+            "journal": "IEEE Ubi-Media",
+            "date": "Aug. 2016"
+          },
+          {
+            "authors": "Ching-Chun Huang, Hoang Tran Vu",
+            "title": "HDR Compression based on Image Matting Laplacian",
+            "journal": "IEEE ICCE-TW",
+            "date": "2016",
+            "award": "Best Paper Award – Second Prize"
+          }
+        ]
+      },
+      {
+        "year": 2015,
+        "papers": [
+          {
+            "authors": "Ching-Chun Huang, Hoang Tran Vu",
+            "title": "A Multi-Layer Discriminative Framework for Parking Space Detection",
+            "journal": "IEEE MLSP",
+            "date": "Sept. 2015"
+          },
+          {
+            "authors": "Ching-Chun Huang, Hoang Tran Vu",
+            "title": "A Multiclass Boosting Approach for Parking Detection",
+            "journal": "IEEE ICCE-TW",
+            "date": "June 2015"
+          }
+        ]
+      },
+      {
+        "year": 2014,
+        "authors": "Ching-Chun Huang, Hoang Tran Vu",
+        "title": "Inter-Vehicle Communication and License Plate Verification",
+        "journal": "IEEE ICCVE",
+        "date": "Nov. 2014"
+      }
+    ],
+    "Domestic Journal Papers": [
+      {
+        "year": 2021,
+        "authors": "Trần Ngọc Thiện, Trần Vũ Hoàng",
+        "title": "Ứng dụng học sâu trong việc hỗ trợ đào tạo thực tập hàn",
+        "journal": "Tạp chí Cơ khí Việt Nam",
+        "issue": "số 4, 2021"
+      }
+    ],
+    "Domestic Conference Papers": [
+      {
+        "year": 2018,
+        "papers": [
+          {
+            "authors": "Thanh-Phat Nguyen, Hoang Tran Vu, Ching-Chun Huang",
+            "title": "A Deep Segmentation Network And A Probabilistic Graphical Models for Lane Detection and Tracking",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2018",
+            "award": "Good Paper Award"
+          },
+          {
+            "authors": "You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang",
+            "title": "Sensor Based On-Street Parking Space Status Inference Upon A Semi-Supervised And Multi-Task Learning Network",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2018"
+          }
+        ]
+      },
+      {
+        "year": 2017,
+        "papers": [
+          {
+            "authors": "Ching-Chun Huang, Hoang Tran Vu",
+            "title": "Parking Space Detection Based On a Multi-Task Deep Convolutional Network with Spatial Transform",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2017"
+          },
+          {
+            "authors": "Chao-Yi Peng, Wei-Chen Chiu, Hoang Tran Vu, Zhi-Yi Peng, Nguyen Thanh Phat, Ching-Chung Huang, Chia-Wen Lin",
+            "title": "A Robust Bottom-Up Framework for Lane Detection in Urban Streets",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2017"
+          },
+          {
+            "authors": "Zhi-Yi Peng, Hoang Tran Vu, Wei-Chen Chiu, Ching-Chung Huang, Chia-Wen Lin",
+            "title": "Traffic Sign Classification Based on Deep Convolutional Network with Domain Adaptation",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2017"
+          }
+        ]
+      },
+      {
+        "year": 2015,
+        "authors": "Ching-Chun Huang, Yi-Ren Chen, Hoang Tran Vu",
+        "title": "Vacant Parking Space Detection Based On A Hierarchical and Semantic Classifier",
+        "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+        "date": "Aug. 2015",
+        "award": "Good Paper Award"
+      },
+      {
+        "year": 2014,
+        "papers": [
+          {
+            "authors": "Yi-Ren Chen, Ching-Chun Huang, Hoang Tran Vu",
+            "title": "Image Enhancement in Nighttime Parking with Ghost Removal",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2014"
+          },
+          {
+            "authors": "Ching-Chun Huang, Hoang Tran Vu",
+            "title": "Crowd-Sensing Method for Driving Surrounding Construction",
+            "journal": "Computer Vision, Graphic and Image Processing (CVGIP)",
+            "date": "Aug. 2014"
+          }
+        ]
+      }
+    ]
+  }
+}

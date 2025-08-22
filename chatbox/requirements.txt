@@ -1,0 +1,9 @@
+fastapi>=0.111
+uvicorn[standard]>=0.30
+openai>=1.42.0
+pydantic>=2.7
+langchain
+langchain-community 
+langchain-huggingface 
+chromadb
+pypdf
