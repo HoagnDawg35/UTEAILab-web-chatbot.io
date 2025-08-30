@@ -35,7 +35,8 @@ app.add_middleware(
         "http://127.0.0.1:5500",   # your current dev origin
         "http://localhost:5500",   # handy alias
         "https://github.com/HoagnDawg35/UTEAILab-web-chatbot.io",
-        "https://api.render.com/deploy/srv-d2k2i93e5dus738nj1jg?key=VOINrzC01a0"
+        "https://api.render.com/deploy/srv-d2k2i93e5dus738nj1jg?key=VOINrzC01a0",
+        "https://uteailab-web-chatbot-io.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],
